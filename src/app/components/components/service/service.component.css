@@ -1,0 +1,51 @@
+/* Updated card styling */
+.card {
+  width: 300px;
+  height: auto; /* Allow full size for card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden; /* Hide any overflow */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: background for title section */
+  color: white; /* Ensure the title and text are visible */
+}
+
+/* Remove hover effect */
+.card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Card body */
+.card-body {
+  height: auto; /* Allow the full content to be displayed */
+  overflow: visible; /* Ensure all content is visible */
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Image at the top of the card */
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Updated section styling */
+#service-section {
+  background-color: #accdec; /* Blue background */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 30px 0;
+}
+
+/* Ensure the button stays at the bottom of the card */
+.btn.mt-auto {
+  margin-top: auto;
+}
